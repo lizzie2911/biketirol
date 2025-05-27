@@ -90,4 +90,4 @@ var miniMap = new L.Control.MiniMap(gkTirol, {
 // const fullScreenControl = L.control.fullscreen();
 // fullScreenControl.addTo(map);
 // oder
-map.addControl(new L.Control.Fullscreen());
+map.addControl(new L.Control.Fullscreen()).addTo(map);
