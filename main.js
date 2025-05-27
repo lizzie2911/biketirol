@@ -56,11 +56,11 @@ L.control.scale({
 //console.log(ETAPPEN);
 let pulldown = document.querySelector("#pulldown");
 for (let etappe of ETAPPEN) {
-    //console.log(etappe);
-    //console.log(etappe.user);
-    //console.log(etappe.nr);
-    //console.log(etappe.titel);
+    let selected = "";
+    if ( etappe.nr == 19) {
+        selected = "selected";
+    }
     pulldown.innerHTML += `
-        <option value="${etappe.user}">Etappe ${etappe.nr}: ${etappe.titel}</option>
+         <option ${selected} value="${etappe.user}">Etappe ${etappe.nr}: ${etappe.titel}</option>
     `;
 }
